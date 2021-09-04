@@ -19,13 +19,13 @@ s.author = { "Daniel Garcia Castrejon" => "daniel.garcia@netpay.com.mx" }
 # 5 - Reemplaza esta URL con la URL de tu propia página de GitHub (desde la barra de direcciones)
 s.homepage = "https://github.com/daniel-garcia-ca/NetPayDistributionPod"
 
-# 6 - Reemplaza esta URL con tu propia URL de Git de"
+# 6 - Reemplaza esta URL con tu propia URL de Git de
 s.source = { :git => "https://github.com/daniel-garcia-ca/NetPayDistributionPod.git", :tag => "#{s.version}" }
 
 # 7
 #s.framework = "UIKit"
-#s.dependencia 'Alamofire', '~> 4.7'
-#dependencia 'MBProgressHUD', '~> 1.1.0'
+s.dependency 'TMXProfilingPod', '~> 0.0.1'
+#s.dependency 'MBProgressHUD', '~> 1.1.0'
 
 # 8
 #s.source_files = "RWPickFlavor / ** / *. { Swift }"
@@ -37,10 +37,11 @@ s.swift_version ="5.4.2"
 
 s.vendored_frameworks = "NetPaySDK.xcframework"
 
+#my-netpay-specs
 
 s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
